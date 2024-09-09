@@ -14,6 +14,7 @@ import {
 } from 'src/_mock';
 
 import { useTranslations } from 'next-intl';
+import { FaceBookChat } from 'src/components/facebook';
 import HomeHero from '../home-hero';
 import HomeFaqs from '../home-faqs';
 import HomeServices from '../home-services';
@@ -40,7 +41,7 @@ export default function HomeView() {
   return (
     <>
       {/* <ScrollProgress scrollYProgress={scrollYProgress} /> */}
-
+      <FaceBookChat />
       <HomeHero />
 
       <HomeOurClients brands={_brands} />
